@@ -16,7 +16,7 @@ html.with-featherlight {
   background: #333;
   background: transparent;
 }
-/* dk */
+
 .featherlight:last-of-type {
   background: rgba(0, 0, 0, 0.8);
 }
