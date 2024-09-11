@@ -10,20 +10,8 @@
   <link rel="preconnect" href="https://fast.wistia.com/" crossorigin="">
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  
-   <style>
-
-body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .timer {
-
-            font-weight: bold;
-            color: red;
-        }
-    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
   <style>
     .topCBblock {
       background: #333333!important;
@@ -76,34 +64,7 @@ body {
   <script type="1941f8a817988a99d069389e-text/javascript">
     var waitForSeconds=1089; // <<<<<<<<<<<  Change this it was 1008! 
   </script>
-    <script>
-        function startTimer() {
-            let timeLeft = 600000; // 10 minutes in seconds
-            let timerElement = document.getElementById("timer");
-
-            const interval = setInterval(function() {
-                let minutes = Math.floor(timeLeft / 60);
-                let seconds = timeLeft % 60;
-
-                // Add a leading zero to seconds if less than 10
-                seconds = seconds < 10 ? '0' + seconds : seconds;
-
-                timerElement.textContent = `${minutes}:${seconds}`;
-
-                if (timeLeft <= 0) {
-                    clearInterval(interval);
-                    timerElement.textContent = "00:00"; // Timer ends
-                }
-
-                timeLeft--;
-            }, 1000); // Update every second
-        }
-
-        // Check if the DOM is ready to access the timer element and start the timer
-        document.addEventListener('DOMContentLoaded', function() {
-            startTimer();
-        });
-    </script>
+  
   <!-- Clickbank window --->
   <script>
       window.clickbank = {
@@ -117,8 +78,34 @@ body {
 window.onload = function() {
   setTimeout(function() {
       document.querySelector('.sec31').style.display = 'block';
-  }, 20000); 
+  }, 10000 ); 
 };
+function startTimer() {
+          let timeLeft = 600; // 10 minutes in seconds
+          let timerElement = document.getElementById("timer");
+
+          const interval = setInterval(function() {
+              let minutes = Math.floor(timeLeft / 60);
+              let seconds = timeLeft % 60;
+
+              // Add a leading zero to seconds if less than 10
+              seconds = seconds < 10 ? '0' + seconds : seconds;
+
+              timerElement.textContent = `${minutes}:${seconds}`;
+
+              if (timeLeft <= 0) {
+                  clearInterval(interval);
+                  timerElement.textContent = "00:00"; // Timer ends
+              }
+
+              timeLeft--;
+          }, 1000); // Update every second
+      }
+
+      // Check if the DOM is ready to access the timer element and start the timer
+      document.addEventListener('DOMContentLoaded', function() {
+          startTimer();
+      });
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1613239792860653&ev=PageView&noscript=1"
@@ -214,7 +201,7 @@ window.onload = function() {
           <div class="s23bx">
             <div class="s23bxhd">
                 <p class="bdhding1">Unlock Your Copy Of&nbsp; <br> 
-       Quick Home Cash System</p>                    
+       Pocket Sized ATM Machine</p>                    
             </div>
             <!-- <img width="966" height="43" alt="" class="s23bxarw" data-cfsrc="./images/boxarrow.jpg" "><noscript><img src="/images/boxarrow.jpg" width="966" height="43" alt="" class="s23bxarw"></noscript> -->
             <div class="s23bxbtm">
@@ -244,18 +231,19 @@ window.onload = function() {
                   <p class="s23bxprc">$37</p>
               </div>                   
               <a href="https://www.ultradest.com/MK69GP3/4MC8D25/?uid=5788">
-                <picture>
+                  <picture>
                   <source srcset="./images/order-now-100mbg.webp" type="image/webp">
                   <source srcset="./images/order-now-100mbg.png" type="image/png">
                   <img width="574" height="145" alt="" class="s23btn" data-cfsrc="./images/order-now-100mbg.png" ;"><noscript><img src="/images/order-now-100mbg.png" width="574" height="145" alt="" class="s23btn"></noscript>
                 </picture>
               </a>
-              <center><p>Price Turns Back to $47 In <span id="timer" class="timer">10:00</span></p></center>
+              <center><p style="font-family: 'Roboto', sans-serif;">
+                  Price Turns Back to $47 In <span id="timer" class="timer">10:00</span></p></center>
             </div>              
           </div>
         </div>
       </div>
-    
+     
   <!-- Terms Of Service Footer --->
          <footer class="flt">
           <div class="container bdinpad">
@@ -310,9 +298,9 @@ window.onload = function() {
       <!-- end popup -->
   
   
-  <link rel="stylesheet" href="../assets/styles/styles-combined.css">
-  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-  <script type="1941f8a817988a99d069389e-text/javascript">
+  <!-- <link rel="stylesheet" href="../assets/styles/styles-combined.css"> -->
+  <!-- <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+  <!-- <script type="1941f8a817988a99d069389e-text/javascript">
     video_type = "desktop";
     video_id = "u0sqgrhbfx";
     // thumbnailStart = 102;
@@ -325,21 +313,21 @@ window.onload = function() {
     delayedBtn = true;
     timeForDelay = waitForSeconds * 1000;
     cookieName = "repeatVisitorVSL";
-  </script> 
+  </script> -->
   
-<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="1941f8a817988a99d069389e-text/javascript"></script>
+  <!-- <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="1941f8a817988a99d069389e-text/javascript"></script>
   <script src="../assets/scripts/featherlight.min.js" type="1941f8a817988a99d069389e-text/javascript"></script>
-  <script src="../assets/scripts/bounceback.min.js" type="1941f8a817988a99d069389e-text/javascript"></script> 
+  <script src="../assets/scripts/bounceback.min.js" type="1941f8a817988a99d069389e-text/javascript"></script> -->
   
- <script src="../assets/scripts/config-2.0.0.min.js" defer="" type="1941f8a817988a99d069389e-text/javascript"></script>
-  <script src="../assets/scripts/scripts-2.0.2.min.js" defer="" type="1941f8a817988a99d069389e-text/javascript"></script> 
-  <script type="1941f8a817988a99d069389e-text/javascript" defer="">
+  <!-- <script src="../assets/scripts/config-2.0.0.min.js" defer="" type="1941f8a817988a99d069389e-text/javascript"></script>
+  <script src="../assets/scripts/scripts-2.0.2.min.js" defer="" type="1941f8a817988a99d069389e-text/javascript"></script> -->
+  <!-- <script type="1941f8a817988a99d069389e-text/javascript" defer="">
     document.getElementById("head").classList.remove("bkcol");
     document.getElementById("cyear").textContent = new Date().getFullYear();
-  </script>
+  </script> -->
   
-  <link href="../css/buy.min.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
+  <!-- <link href="../css/buy.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- <script type="text/javascript">
     function getDeviceType() {
       const userAgent = navigator.userAgent;
       if (/mobile/i.test(userAgent)) {
@@ -371,13 +359,13 @@ window.onload = function() {
       // Immediately trigger the resize event handler to set initial video load
       $(window).resize();
   }
-  </script> 
-  <script type="1941f8a817988a99d069389e-text/javascript" async="">
+  </script> -->
+  <!-- <script type="1941f8a817988a99d069389e-text/javascript" async="">
     /*! modernizr 3.6.0 (Custom Build) | MIT *
      * https://modernizr.com/download/?-webp-webpalpha-webpanimation-webplossless_webp_lossless-setclasses !*/
     !function(A,e,n){function a(A){var e=l.className,n=Modernizr._config.classPrefix||"";if(r&&(e=e.baseVal),Modernizr._config.enableJSClass){var a=new RegExp("(^|\\s)"+n+"no-js(\\s|$)");e=e.replace(a,"$1"+n+"js$2")}Modernizr._config.enableClasses&&(e+=" "+n+A.join(" "+n),r?l.className.baseVal=e:l.className=e)}function o(A,e){return typeof A===e}function s(){var A,e,n,a,s,i,l;for(var r in f)if(f.hasOwnProperty(r)){if(A=[],e=f[r],e.name&&(A.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(n=0;n<e.options.aliases.length;n++)A.push(e.options.aliases[n].toLowerCase());for(a=o(e.fn,"function")?e.fn():e.fn,s=0;s<A.length;s++)i=A[s],l=i.split("."),1===l.length?Modernizr[l[0]]=a:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=a),t.push((a?"":"no-")+l.join("-"))}}function i(A,e){if("object"==typeof A)for(var n in A)u(A,n)&&i(n,A[n]);else{A=A.toLowerCase();var o=A.split("."),s=Modernizr[o[0]];if(2==o.length&&(s=s[o[1]]),"undefined"!=typeof s)return Modernizr;e="function"==typeof e?e():e,1==o.length?Modernizr[o[0]]=e:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=e),a([(e&&0!=e?"":"no-")+o.join("-")]),Modernizr._trigger(A,e)}return Modernizr}var t=[],l=e.documentElement,r="svg"===l.nodeName.toLowerCase(),f=[],c={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(A,e){var n=this;setTimeout(function(){e(n[A])},0)},addTest:function(A,e,n){f.push({name:A,fn:e,options:n})},addAsyncTest:function(A){f.push({name:null,fn:A})}},Modernizr=function(){};Modernizr.prototype=c,Modernizr=new Modernizr;var u;!function(){var A={}.hasOwnProperty;u=o(A,"undefined")||o(A.call,"undefined")?function(A,e){return e in A&&o(A.constructor.prototype[e],"undefined")}:function(e,n){return A.call(e,n)}}(),c._l={},c.on=function(A,e){this._l[A]||(this._l[A]=[]),this._l[A].push(e),Modernizr.hasOwnProperty(A)&&setTimeout(function(){Modernizr._trigger(A,Modernizr[A])},0)},c._trigger=function(A,e){if(this._l[A]){var n=this._l[A];setTimeout(function(){var A,a;for(A=0;A<n.length;A++)(a=n[A])(e)},0),delete this._l[A]}},Modernizr._q.push(function(){c.addTest=i}),Modernizr.addAsyncTest(function(){var A=new Image;A.onerror=function(){i("webpalpha",!1,{aliases:["webp-alpha"]})},A.onload=function(){i("webpalpha",1==A.width,{aliases:["webp-alpha"]})},A.src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA=="}),Modernizr.addAsyncTest(function(){var A=new Image;A.onerror=function(){i("webplossless",!1,{aliases:["webp-lossless"]})},A.onload=function(){i("webplossless",1==A.width,{aliases:["webp-lossless"]})},A.src="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA="}),Modernizr.addAsyncTest(function(){function A(A,e,n){function a(e){var a=e&&"load"===e.type?1==o.width:!1,s="webp"===A;i(A,s&&a?new Boolean(a):a),n&&n(e)}var o=new Image;o.onerror=a,o.onload=a,o.src=e}var e=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],n=e.shift();A(n.name,n.uri,function(n){if(n&&"load"===n.type)for(var a=0;a<e.length;a++)A(e[a].name,e[a].uri)})}),Modernizr.addAsyncTest(function(){var A=new Image;A.onerror=function(){i("webpanimation",!1,{aliases:["webp-animation"]})},A.onload=function(){i("webpanimation",1==A.width,{aliases:["webp-animation"]})},A.src="data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}),s(),a(t),delete c.addTest,delete c.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();A.Modernizr=Modernizr}(window,document);
   </script>
-  <script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1941f8a817988a99d069389e-|49" defer=""></script>
+  <script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1941f8a817988a99d069389e-|49" defer=""></script> -->
   
       
   

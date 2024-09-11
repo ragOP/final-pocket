@@ -455,7 +455,7 @@ ul.s23bxlist li:nth-child(2) img {
     .s23bxprc {
   font-weight: 700;
   font-size: 71px;
-  line-height: 71px;
+  line-height: 89px;
   color: #1b2b61;
   text-align: center;
   margin-top: 4px;
@@ -577,7 +577,7 @@ ul.s23bxlist li:nth-child(2) img {
   }
   .s23bxprc {
     font-size: 54px;
-    line-height: 54px;
+    line-height: 104px;
   }
   .s23bx-lftarw,
   .s23bx-rgtarw {
@@ -682,4 +682,9 @@ ul.s23bxlist li:nth-child(2) span {
 }
 .sec31 {
     display: none;
+}
+.timer {
+
+  font-weight: bold;
+  color: red;
 }
