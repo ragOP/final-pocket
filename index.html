@@ -69,7 +69,33 @@
   <script type="1941f8a817988a99d069389e-text/javascript">
     var waitForSeconds=1089; // <<<<<<<<<<<  Change this it was 1008! 
   </script>
-  
+   <script>
+        let timeLeft = 600; // 10 minutes in seconds
+
+        function startTimer() {
+            let timerElement = document.getElementById("timer");
+
+            const interval = setInterval(function() {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+
+                // Add a leading zero to seconds if less than 10
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                timerElement.textContent = `${minutes}:${seconds}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(interval);
+                    timerElement.textContent = "00:00"; // Timer ends
+                }
+
+                timeLeft--;
+            }, 1000); // Update every second
+        }
+
+        // Start the timer when the page loads
+        window.onload = startTimer;
+    </script>
   <!-- Clickbank window --->
   <script>
       window.clickbank = {
@@ -221,33 +247,7 @@ window.onload = function() {
           </div>
         </div>
       </div>
-     <script>
-        let timeLeft = 600; // 10 minutes in seconds
-
-        function startTimer() {
-            let timerElement = document.getElementById("timer");
-
-            const interval = setInterval(function() {
-                let minutes = Math.floor(timeLeft / 60);
-                let seconds = timeLeft % 60;
-
-                // Add a leading zero to seconds if less than 10
-                seconds = seconds < 10 ? '0' + seconds : seconds;
-
-                timerElement.textContent = `${minutes}:${seconds}`;
-
-                if (timeLeft <= 0) {
-                    clearInterval(interval);
-                    timerElement.textContent = "00:00"; // Timer ends
-                }
-
-                timeLeft--;
-            }, 1000); // Update every second
-        }
-
-        // Start the timer when the page loads
-        window.onload = startTimer;
-    </script>
+    
   <!-- Terms Of Service Footer --->
          <footer class="flt">
           <div class="container bdinpad">
