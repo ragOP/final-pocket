@@ -11,7 +11,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com/">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
   <link rel="stylesheet" href="styles.css">
-  
+   <style>
+        .timer {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
   <style>
     .topCBblock {
       background: #333333!important;
@@ -211,12 +216,38 @@ window.onload = function() {
                   <img width="574" height="145" alt="" class="s23btn" data-cfsrc="./images/order-now-100mbg.png" ;"><noscript><img src="/images/order-now-100mbg.png" width="574" height="145" alt="" class="s23btn"></noscript>
                 </picture>
               </a>
-              <p>Price Turns Back to $47 In Next 10:00 </p>
+              <center><p>Price Turns Back to $47 In <span id="timer" class="timer">10:00</span></p></center>
             </div>              
           </div>
         </div>
       </div>
-     
+     <script>
+        let timeLeft = 600; // 10 minutes in seconds
+
+        function startTimer() {
+            let timerElement = document.getElementById("timer");
+
+            const interval = setInterval(function() {
+                let minutes = Math.floor(timeLeft / 60);
+                let seconds = timeLeft % 60;
+
+                // Add a leading zero to seconds if less than 10
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+
+                timerElement.textContent = `${minutes}:${seconds}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(interval);
+                    timerElement.textContent = "00:00"; // Timer ends
+                }
+
+                timeLeft--;
+            }, 1000); // Update every second
+        }
+
+        // Start the timer when the page loads
+        window.onload = startTimer;
+    </script>
   <!-- Terms Of Service Footer --->
          <footer class="flt">
           <div class="container bdinpad">
