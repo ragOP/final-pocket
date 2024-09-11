@@ -106,6 +106,7 @@ function startTimer() {
       document.addEventListener('DOMContentLoaded', function() {
           startTimer();
       });
+      
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1613239792860653&ev=PageView&noscript=1"
@@ -144,7 +145,7 @@ function startTimer() {
                             <!-- <div class="" style="position:relative;"> -->
                 <script src="https://fast.wistia.com/embed/medias/ew625iburr.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
                   <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                      <div class="wistia_embed wistia_async_ew625iburr seo=true videoFoam=true" ><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                      <div class="wistia_embed wistia_async_ew625iburr seo=true videoFoam=true" id="myWistiaVideo"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
                         
                       </div></div></div></div>
                 <div class="vid-padding vid-padding-desktop wistia_responsive_padding">
@@ -298,69 +299,38 @@ function startTimer() {
       <!-- end popup -->
   
   
-  <!-- <link rel="stylesheet" href="../assets/styles/styles-combined.css"> -->
-  <!-- <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
-  <!-- <script type="1941f8a817988a99d069389e-text/javascript">
+  <link rel="stylesheet" href="../assets/styles/styles-combined.css">
+  <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script type="1941f8a817988a99d069389e-text/javascript">
     video_type = "desktop";
     video_id = "u0sqgrhbfx";
     // thumbnailStart = 102;
     // thumbnailEnd = 107;
     fullscreen_video = "1";
-    ld_video_controls = "false";
-    ld_image_continue = "../assets/images/video-pc.png";
-    ld_image_unmute = "../assets/images/sound-pc.png";
+    ld_video_controls = "true";
+    ld_image_continue = "./assets/images/video-pc.png";
+    ld_image_unmute = "./assets/images/sound-pc.png";
     showPopup = true;
     delayedBtn = true;
     timeForDelay = waitForSeconds * 1000;
     cookieName = "repeatVisitorVSL";
-  </script> -->
-  
-  <!-- <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="1941f8a817988a99d069389e-text/javascript"></script>
+  </script> 
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="1941f8a817988a99d069389e-text/javascript"></script> 
   <script src="../assets/scripts/featherlight.min.js" type="1941f8a817988a99d069389e-text/javascript"></script>
-  <script src="../assets/scripts/bounceback.min.js" type="1941f8a817988a99d069389e-text/javascript"></script> -->
+  <script src="../assets/scripts/bounceback.min.js" type="1941f8a817988a99d069389e-text/javascript"></script> 
   
-  <!-- <script src="../assets/scripts/config-2.0.0.min.js" defer="" type="1941f8a817988a99d069389e-text/javascript"></script>
-  <script src="../assets/scripts/scripts-2.0.2.min.js" defer="" type="1941f8a817988a99d069389e-text/javascript"></script> -->
-  <!-- <script type="1941f8a817988a99d069389e-text/javascript" defer="">
+ <script src="../assets/scripts/config-2.0.0.min.js" defer="" type="1941f8a817988a99d069389e-text/javascript"></script> 
+  <script src="../assets/scripts/scripts-2.0.2.min.js" defer="" type="1941f8a817988a99d069389e-text/javascript"></script>
+   <script type="1941f8a817988a99d069389e-text/javascript" defer=""> 
     document.getElementById("head").classList.remove("bkcol");
     document.getElementById("cyear").textContent = new Date().getFullYear();
-  </script> -->
+  </script>
   
   <!-- <link href="../css/buy.min.css" rel="stylesheet" type="text/css"> -->
-  <!-- <script type="text/javascript">
-    function getDeviceType() {
-      const userAgent = navigator.userAgent;
-      if (/mobile/i.test(userAgent)) {
-          return "Mobile";
-      } else if (/tablet/i.test(userAgent)) {
-          return "Tablet";
-      } else {
-          return "Desktop";
-      }
-  }
-  
-  window.onload = function() {
-      let device = getDeviceType();
-      console.log(device); // Optional: Output the device type to console
-      
-      var currentSize = null;
-  
-      $(window).resize(function(){
-          let mobile = $(window).width() <= 1024;
-          if (mobile && currentSize != 'desktop') {
-              loadVideo('o04jrg55br');
-              currentSize = 'mobile';
-          } else if (!mobile && currentSize != 'desktop') {
-              loadVideo('u0sqgrhbfx');
-              currentSize = 'desktop';
-          }
-      });
-  
-      // Immediately trigger the resize event handler to set initial video load
-      $(window).resize();
-  }
-  </script> -->
-  <!-- <script type="1941f8a817988a99d069389e-text/javascript" async="">
+  <script type="text/javascript">
+   
+  </script>
+  <script type="1941f8a817988a99d069389e-text/javascript" async="">
     /*! modernizr 3.6.0 (Custom Build) | MIT *
      * https://modernizr.com/download/?-webp-webpalpha-webpanimation-webplossless_webp_lossless-setclasses !*/
     !function(A,e,n){function a(A){var e=l.className,n=Modernizr._config.classPrefix||"";if(r&&(e=e.baseVal),Modernizr._config.enableJSClass){var a=new RegExp("(^|\\s)"+n+"no-js(\\s|$)");e=e.replace(a,"$1"+n+"js$2")}Modernizr._config.enableClasses&&(e+=" "+n+A.join(" "+n),r?l.className.baseVal=e:l.className=e)}function o(A,e){return typeof A===e}function s(){var A,e,n,a,s,i,l;for(var r in f)if(f.hasOwnProperty(r)){if(A=[],e=f[r],e.name&&(A.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(n=0;n<e.options.aliases.length;n++)A.push(e.options.aliases[n].toLowerCase());for(a=o(e.fn,"function")?e.fn():e.fn,s=0;s<A.length;s++)i=A[s],l=i.split("."),1===l.length?Modernizr[l[0]]=a:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=a),t.push((a?"":"no-")+l.join("-"))}}function i(A,e){if("object"==typeof A)for(var n in A)u(A,n)&&i(n,A[n]);else{A=A.toLowerCase();var o=A.split("."),s=Modernizr[o[0]];if(2==o.length&&(s=s[o[1]]),"undefined"!=typeof s)return Modernizr;e="function"==typeof e?e():e,1==o.length?Modernizr[o[0]]=e:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=e),a([(e&&0!=e?"":"no-")+o.join("-")]),Modernizr._trigger(A,e)}return Modernizr}var t=[],l=e.documentElement,r="svg"===l.nodeName.toLowerCase(),f=[],c={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(A,e){var n=this;setTimeout(function(){e(n[A])},0)},addTest:function(A,e,n){f.push({name:A,fn:e,options:n})},addAsyncTest:function(A){f.push({name:null,fn:A})}},Modernizr=function(){};Modernizr.prototype=c,Modernizr=new Modernizr;var u;!function(){var A={}.hasOwnProperty;u=o(A,"undefined")||o(A.call,"undefined")?function(A,e){return e in A&&o(A.constructor.prototype[e],"undefined")}:function(e,n){return A.call(e,n)}}(),c._l={},c.on=function(A,e){this._l[A]||(this._l[A]=[]),this._l[A].push(e),Modernizr.hasOwnProperty(A)&&setTimeout(function(){Modernizr._trigger(A,Modernizr[A])},0)},c._trigger=function(A,e){if(this._l[A]){var n=this._l[A];setTimeout(function(){var A,a;for(A=0;A<n.length;A++)(a=n[A])(e)},0),delete this._l[A]}},Modernizr._q.push(function(){c.addTest=i}),Modernizr.addAsyncTest(function(){var A=new Image;A.onerror=function(){i("webpalpha",!1,{aliases:["webp-alpha"]})},A.onload=function(){i("webpalpha",1==A.width,{aliases:["webp-alpha"]})},A.src="data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA=="}),Modernizr.addAsyncTest(function(){var A=new Image;A.onerror=function(){i("webplossless",!1,{aliases:["webp-lossless"]})},A.onload=function(){i("webplossless",1==A.width,{aliases:["webp-lossless"]})},A.src="data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA="}),Modernizr.addAsyncTest(function(){function A(A,e,n){function a(e){var a=e&&"load"===e.type?1==o.width:!1,s="webp"===A;i(A,s&&a?new Boolean(a):a),n&&n(e)}var o=new Image;o.onerror=a,o.onload=a,o.src=e}var e=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],n=e.shift();A(n.name,n.uri,function(n){if(n&&"load"===n.type)for(var a=0;a<e.length;a++)A(e[a].name,e[a].uri)})}),Modernizr.addAsyncTest(function(){var A=new Image;A.onerror=function(){i("webpanimation",!1,{aliases:["webp-animation"]})},A.onload=function(){i("webpanimation",1==A.width,{aliases:["webp-animation"]})},A.src="data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}),s(),a(t),delete c.addTest,delete c.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();A.Modernizr=Modernizr}(window,document);
